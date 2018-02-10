@@ -76,6 +76,10 @@ nav .sitecontainer {
   justify-content: space-between;
 }
 
+nav .small {
+  display: none;
+}
+
 #products {
   display: flex;
   justify-content: center;
@@ -138,4 +142,23 @@ footer {
   justify-content: center;
   height: 5rem;
   align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  #products .product {
+    width: 47%;
+  }
+  .product.firsttogo{
+    display: none;
+  }
+  nav .sitecontainer.big {
+    display: none;
+  }
+  nav .sitecontainer.small {
+    display: flex;
+  }
+
+  nav .sitecontainer {
+    justify-content: center;
+  }
 }
