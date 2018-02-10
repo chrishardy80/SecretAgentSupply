@@ -1,0 +1,35 @@
+body {
+  color: white;
+}
+
+.textbox {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 12px 8px;
+}
+
+header .newarrival {
+  background-image: url(../images/moto.jpeg);
+
+}
+
+#products {
+  display: flex;
+}
+
+#info {
+  display: flex;
+}
+
+.furtherinfo {
+  color: black;
+}
+
+footer {
+  background-color: black;
+}
