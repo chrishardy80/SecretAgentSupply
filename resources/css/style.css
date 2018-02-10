@@ -1,29 +1,131 @@
+html {
+  font-size: 18px;
+}
+
 body {
   color: white;
+  font-family: Helvetica, sans-serif;
 }
 
 .textbox {
   background-color: black;
 }
 
+.sitecontainer {
+  display: flex;
+  width: 960px;
+}
+/* header styling */
+
 header {
   display: flex;
   flex-direction: column;
   background-color: black;
-  padding: 12px 8px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo {
+  display: flex;
+  padding: 0.66rem 0.5rem;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding-right: 1rem;
 }
 
 header .newarrival {
+  display: flex;
+  flex-direction: column;
   background-image: url(../images/moto.jpeg);
+  background-size: cover;
+  height: 25rem;
+  width: 100%;
+  align-items: center;
+}
 
+.newarrival .textbox {
+  margin-top: 9rem;
+  width: 20rem;
+  padding: 2rem 3rem;
+  font-weight: bold;
+}
+
+.newarrival .textbox h3 {
+  font-size: : 1rem;
+}
+
+.newarrival .textbox h1 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+}
+
+header nav {
+  display: flex;
+  background-color: firebrick;
+  padding: 0.75rem 0;
+  justify-content: center;
+  width: 100%;
+}
+
+nav .sitecontainer {
+  display: flex;
+  justify-content: space-between;
 }
 
 #products {
   display: flex;
+  justify-content: center;
 }
+
+#products .sitecontainer {
+  justify-content: space-between;
+}
+
+#products .product {
+  width: 30%;
+  border: 4px solid black;
+  margin: 3rem 0;
+}
+
+.product .imagecontainer {
+  display: flex;
+  height: 9rem;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.product img {
+  max-width: 8rem;
+}
+
+.product .textbox {
+  display: flex;
+  padding: 0.5rem 0;
+  justify-content: center;
+}
+
+
 
 #info {
   display: flex;
+  justify-content: center
+}
+
+#info .sitecontainer {
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.locandhours {
+  width: 35%;
+}
+
+.locandhours .textbox {
+  padding: 1rem 2rem;
 }
 
 .furtherinfo {
@@ -31,5 +133,9 @@ header .newarrival {
 }
 
 footer {
+  display: flex;
   background-color: black;
+  justify-content: center;
+  height: 5rem;
+  align-items: center;
 }
