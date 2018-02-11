@@ -14,12 +14,11 @@ body {
 .sitecontainer {
   display: flex;
   width: 960px;
+
 }
 /* header styling */
 
 header {
-  display: flex;
-  flex-direction: column;
   background-color: black;
   justify-content: center;
   align-items: center;
@@ -30,6 +29,7 @@ header {
   display: flex;
   padding: 0.66rem 0.5rem;
   align-items: center;
+  justify-content: center;
 }
 
 .logo img {
@@ -39,7 +39,6 @@ header {
 
 header .newarrival {
   display: flex;
-  flex-direction: column;
   background-image: url(../images/moto.jpeg);
   background-size: cover;
   height: 25rem;
@@ -161,4 +160,43 @@ footer {
   nav .sitecontainer {
     justify-content: center;
   }
+}
+
+@media only screen and (max-width: 470px) {
+  .newarrival .textbox h3 {
+    font-size: : 0.77rem;
+  }
+  .newarrival .textbox h1 {
+    font-size: 1rem;
+  }
+  .newarrival .textbox {
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+  }
+  header .newarrival {
+    height: 15rem;
+  }
+  #products .product {
+    width: 90%;
+  }
+  .product.secondtogo {
+    display: none;
+  }
+  #products .sitecontainer {
+    justify-content: center;
+  }
+
+  #info .sitecontainer {
+    flex-direction: column;
+    align-items: center;
+
+  }
+  #info .locandhours {
+    width: 90%;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+ footer .copyright {
+  justify-content: center;
+}
 }
